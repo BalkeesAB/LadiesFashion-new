@@ -1,0 +1,236 @@
+.productdetail {
+    display: flex;
+    margin: 30px 170px 0px 170px;
+}
+
+.productdetail-left {
+    display: flex;
+    gap: 17px;
+}
+
+.productdetail-img-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    img {
+        height: 163px;
+    }
+}
+
+.productdetail-main-img {
+    width: 586px;
+    height: 700px;
+}
+
+.productdetail-right {
+    margin: 0px 70px;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        color: #3d3d3d;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    &-stars {
+        display: flex;
+        align-items: center;
+        margin-top: 13px;
+        gap: 5px;
+        color: #1c1c1c;
+        font-size: 16px;
+    }
+
+    &-prices {
+        display: flex;
+        margin: 40px 0px;
+        gap: 30px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &-price-old {
+        color: #818181;
+        text-decoration: line-through;
+    }
+
+    &-price-new {
+        color: #c33030;
+    }
+
+    &-size {
+        h1 {
+            margin-top: 55px;
+            color: #656565;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+    &-sizes {
+        display: flex;
+        margin: 30px 0px;
+        gap: 20px;
+        div {
+            padding: 18px 24px;
+            background: #fbfbfb;
+            border: 1px solid #ebebeb;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    }
+    button {
+        padding: 20px 40px;
+        width: 200px;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        background: #c33030;
+        margin-bottom: 40px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    &-category {
+        margin-top: 10px;
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .productdetail {
+        flex-direction: column;
+        margin: 20px;
+        width: 110%;
+        align-items: flex-start;
+    }
+
+    .productdetail-left {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-left: 40px;
+    }
+
+    .productdetail-img-list {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        img {
+            height: 170px;
+            width: 130px;
+        }
+    }
+
+    .productdetail-main-img {
+        width: 530px;
+        height: 703px;
+    }
+
+    .productdetail-right {
+        margin: 20px 0;
+        text-align: left;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        h1 {
+            font-size: 32px;
+        }
+        &-description,
+        &-category {
+            font-size: 23px;
+        }
+        &-prices {
+            font-size: 25px;
+            gap: 20px;
+        }
+        &-sizes {
+            justify-content: flex-start;
+        }
+        button {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .productdetail {
+        margin: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 110%;
+    }
+
+    .productdetail-left {
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .productdetail-img-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        img {
+            height: 110px;
+            width: 80px;
+        }
+    }
+
+    .productdetail-main-img {
+        width: 300px;
+        height: 470px;
+    }
+
+    .productdetail-right {
+        text-align: left;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        h1 {
+            font-size: 20px;
+        }
+        &-stars {
+            font-size: 14px;
+            img {
+                height: 13px;
+            }
+        }
+
+        &-prices {
+            font-size: 14px;
+            flex-direction: row;
+            gap: 5px;
+            margin: 10px 0px 10px 0px;
+        }
+
+        &-description {
+            font-size: 14px;
+        }
+
+        &-size {
+            h1 {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+        }
+
+        &-sizes {
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 10px 0px 10px 0px;
+            justify-content: flex-start;
+            div {
+                padding: 7px 12px;
+                font-size: 13px;
+            }
+        }
+        button {
+            margin-top: 10px;
+            padding: 15px;
+            width: 100%;
+        }
+    }
+}
