@@ -1,7 +1,8 @@
 .hero {
-    height: 100vh;
+    height: 90vh;
     background: linear-gradient(180deg, #d5a97290, #a129293d 60%);
     display: flex;
+    width: 104%;
 
     .hero-left {
         flex: 1;
@@ -58,6 +59,38 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        img {
+            height: 700px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 50px 15px;
+        width: 100%;
+
+        .hero-left {
+            padding-left: 0;
+            align-items: center;
+            h2 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 60px;
+            }
+            .hero-hand-icon {
+                justify-content: center;
+            }
+        }
+
+        .hero-right {
+            img {
+                height: 400px;
+            }
+        }
     }
 
     @media (max-width: 768px) {
@@ -65,8 +98,8 @@
         align-items: center;
         text-align: center;
         height: auto;
-        padding: 50px 20px;
-        width: 115%;
+        padding: 50px 15px;
+        width: 100%;
 
         .hero-left {
             padding-left: 0;
@@ -90,8 +123,11 @@
     }
 
     @media (max-width: 480px) {
-        .hero {
-            width: 120%;
+        width: 100%;
+        .hero-right {
+            img {
+                height: 300px;
+            }
         }
 
         .hero-left {
@@ -100,7 +136,7 @@
             }
 
             .hero-hand-icon img {
-                width: 70px;
+                width: 60px;
             }
             
             .hero-latest-btn {

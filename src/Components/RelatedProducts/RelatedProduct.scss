@@ -18,7 +18,25 @@
     }
   }
 
+  @media (max-width: 1024px) {
+    margin: 40px 70px;
+    h1 {
+      font-size: 35px;
+    }
+
+    &-item {
+      margin: 16px 0px;
+      width: 108%;
+      gap: 130px;
+      img {
+        height: 300px;
+        width: 220px;
+      }
+    }
+  }
+
   @media (max-width: 768px) {
+    margin: 40px 45px;
     h1 {
       font-size: 35px;
     }
@@ -26,7 +44,7 @@
     &-item {
       margin: 16px 1px;
       width: 108%;
-      gap: 110px;
+      gap: 60px;
       img {
         height: 250px;
         width: 180px;
@@ -35,6 +53,7 @@
   }
 
   @media (max-width: 480px) {
+    margin: 40px 20px;
     h1 {
       font-size: 28px;
     }
@@ -44,8 +63,8 @@
       gap: 60px;
       width: 200px;
       img {
-        height: 190px;
-        width: 130px;
+        height: 170px;
+        width: 110px;
       }
       .item {
         width: 50%;
